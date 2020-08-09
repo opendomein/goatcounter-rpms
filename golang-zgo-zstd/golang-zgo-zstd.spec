@@ -30,10 +30,6 @@ Source0:        %{gosource}
 
 %prep
 %goprep
-# FIXME: Remove failing tests for now
-rm zgo/zgo_test.go
-rm zint/uint128_test.go
-rm zstring/zstring_test.go
 
 %install
 %gopkginstall
