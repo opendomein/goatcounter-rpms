@@ -4,7 +4,7 @@
 # https://github.com/dominikh/go-tools
 %global goipath         honnef.co/go/tools
 %global forgeurl        https://github.com/dominikh/go-tools
-Version:                0.0.1-2020.1.5
+Version:                2020.1.5
 
 %gometa
 
@@ -24,7 +24,7 @@ Summary:        Staticcheck - The advanced Go linter
 # Upstream license specification: MIT and BSD-3-Clause
 License:        MIT and BSD
 URL:            %{gourl}
-Source0:        %{gosource}
+Source0:        %{forgeurl}/archive/%{version}.tar.gz
 
 BuildRequires:  golang(github.com/BurntSushi/toml)
 BuildRequires:  golang(github.com/google/renameio)
@@ -56,7 +56,7 @@ BuildRequires:  golang(golang.org/x/tools/refactor/importgraph)
 for cmd in cmd/* ; do
   %gobuild -o %{gobuilddir}/bin/$(basename $cmd) %{goipath}/$cmd
 done
-for cmd in _benchmarks ir; do
+for cmd in ir; do
   %gobuild -o %{gobuilddir}/bin/$(basename $cmd) %{goipath}/$cmd
 done
 
