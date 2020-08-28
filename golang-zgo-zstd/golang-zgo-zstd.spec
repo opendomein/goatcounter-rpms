@@ -4,7 +4,7 @@
 # https://github.com/zgoat/zstd
 %global goipath         zgo.at/zstd
 %global forgeurl        https://github.com/zgoat/zstd
-%global commit          a2f77dbeed7f700277aa09d15b7675404bf8bd40
+%global commit          ef3212fc7e04f2fa3bcca87f5d472a670f7381db
 
 %gometa
 
@@ -42,6 +42,6 @@ Source0:        %{gosource}
 %gopkgfiles
 
 %changelog
-* Sun Aug 09 11:20:03 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200809gita2f77db
+* Fri Aug 28 16:04:07 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200828gitef3212f
 - Initial package
 
