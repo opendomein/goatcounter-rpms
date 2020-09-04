@@ -4,7 +4,7 @@
 # https://github.com/zgoat/zdb
 %global goipath         zgo.at/zdb
 %global forgeurl        https://github.com/zgoat/zdb
-%global commit          04f2138acff92b19fa1f95c9918054a8d463bd23
+%global commit          ba83dd3bc119a113d7f6a57664d7d1679fe316ed
 
 %gometa
 
@@ -56,6 +56,6 @@ BuildRequires:  golang(zgo.at/zstd/ztest)
 %gopkgfiles
 
 %changelog
-* Thu Sep 03 13:17:55 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200903git04f2138
+* Fri Sep 04 10:34:43 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200904gitba83dd3
 - Initial package
 
