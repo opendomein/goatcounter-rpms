@@ -21,7 +21,7 @@ Summary:        None
 # Upstream license specification: BSD-2-Clause
 License:        BSD
 URL:            %{gourl}
-Source0:        %{gosource}
+Source0:        https://git.sr.ht/~samwhited/otp/archive/v%{version}.tar.gz
 
 %description
 %{common_description}
