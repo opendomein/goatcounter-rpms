@@ -4,7 +4,7 @@
 # https://github.com/zgoat/goatcounter
 %global goipath         zgo.at/goatcounter
 %global forgeurl        https://github.com/zgoat/goatcounter
-Version:                1.4.0
+Version:                1.4.1
 
 %gometa
 
@@ -12,7 +12,7 @@ Version:                1.4.0
 Easy web analytics. No tracking of personal data.}
 
 %global golicenses      LICENSE
-%global godocs          docs CHANGELOG.markdown README.markdown\\\
+%global godocs          docs README.markdown CHANGELOG.markdown\\\
                         db/README.markdown tpl/_backend_sitecode.markdown\\\
                         tpl/api.markdown tpl/gdpr.markdown tpl/why.markdown
 
@@ -32,6 +32,7 @@ BuildRequires:  golang(github.com/boombuler/barcode/qr)
 BuildRequires:  golang(github.com/go-chi/chi)
 BuildRequires:  golang(github.com/go-chi/chi/middleware)
 BuildRequires:  golang(github.com/google/uuid)
+BuildRequires:  golang(github.com/jinzhu/now)
 BuildRequires:  golang(github.com/jmoiron/sqlx)
 BuildRequires:  golang(github.com/lib/pq)
 BuildRequires:  golang(github.com/mattn/go-sqlite3)
@@ -112,7 +113,7 @@ BuildRequires:  golang(zgo.at/zvalidate)
 # Tests
 BuildRequires:  golang(github.com/PuerkitoBio/goquery)
 BuildRequires:  golang(golang.org/x/tools/go/analysis/analysistest)
-BuildRequires:  golang(zgo.at/ztest)
+BuildRequires:  golang(zgo.at/zstd/ztest)
 %endif
 
 %description
@@ -141,7 +142,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 
 %files
 %license LICENSE
-%doc docs CHANGELOG.markdown README.markdown db/README.markdown
+%doc docs README.markdown CHANGELOG.markdown db/README.markdown
 %doc tpl/_backend_sitecode.markdown tpl/api.markdown tpl/gdpr.markdown
 %doc tpl/why.markdown
 %{_bindir}/*
@@ -149,6 +150,9 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %gopkgfiles
 
 %changelog
+* Fri Sep 04 10:35:28 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 1.4.1-1
+- Bumped to 1.4.1 
+
 * Fri Aug 28 16:21:39 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 1.4.0-1
 - Initial package
 
