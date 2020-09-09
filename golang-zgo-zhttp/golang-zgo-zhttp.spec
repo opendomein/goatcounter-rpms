@@ -4,7 +4,7 @@
 # https://github.com/zgoat/zhttp
 %global goipath         zgo.at/zhttp
 %global forgeurl        https://github.com/zgoat/zhttp
-%global commit          1998621adf31ed0e1b5a6c6dc1dd05c640e13f75
+%global commit          067b61c761835447d751ffb702c1edfbdf49607d
 
 %gometa
 
@@ -53,6 +53,6 @@ BuildRequires:  golang(zgo.at/zstd/ztest)
 %gopkgfiles
 
 %changelog
-* Fri Sep 04 10:33:45 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200904git1998621
+* Wed Sep 09 08:57:14 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200909git067b61c
 - Initial package
 
