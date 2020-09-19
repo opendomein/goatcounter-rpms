@@ -4,7 +4,7 @@
 # https://github.com/zgoat/zlog
 %global goipath         zgo.at/zlog
 %global forgeurl        https://github.com/zgoat/zlog
-%global commit          2326f63c8cfaf1ec73ce2514aa76fe6aeb9d7bcd
+%global commit          6d07ccc4c7cf1ffd6e46818c63b75314a9e34551
 
 %gometa
 
@@ -42,6 +42,6 @@ Source0:        %{gosource}
 %gopkgfiles
 
 %changelog
-* Sun Aug 09 11:04:48 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200809git2326f63
+* Sat Sep 19 16:46:17 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200919git6d07ccc
 - Initial package
 
