@@ -4,7 +4,7 @@
 # https://github.com/zgoat/zli
 %global goipath         zgo.at/zli
 %global forgeurl        https://github.com/zgoat/zli
-%global commit          d9fa18baab0f226c009890e753d1a53c02f3e8ee
+%global commit          8cba1b84b1e7a9eb97910cd83b933629d5077b81
 
 %gometa
 
@@ -58,6 +58,6 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %gopkgfiles
 
 %changelog
-* Fri Aug 28 16:37:51 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200828gitd9fa18b
+* Sat Sep 19 16:49:42 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200919git8cba1b8
 - Initial package
 
