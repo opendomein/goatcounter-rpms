@@ -4,7 +4,7 @@
 # https://github.com/zgoat/zcache
 %global goipath         zgo.at/zcache
 %global forgeurl        https://github.com/zgoat/zcache
-%global commit          df91dc43c1c80650ebcd2c23a13460efacc91204
+Version:                1.0.0
 
 %gometa
 
@@ -13,11 +13,10 @@ An in-memory key:value store/cache (similar to Memcached) library for Go,
 suitable for single-machine applications.}
 
 %global golicenses      LICENSE
-%global godocs          issue-list.markdown README.md
+%global godocs          README.markdown issue-list.markdown
 
 Name:           %{goname}
-Version:        0
-Release:        0.1%{?dist}
+Release:        1%{?dist}
 Summary:        An in-memory key:value store/cache (similar to Memcached) library for Go, suitable for single-machine applications
 
 License:        MIT
@@ -47,12 +46,15 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 
 %files
 %license LICENSE
-%doc issue-list.markdown README.md
+%doc README.markdown issue-list.markdown
 %{_bindir}/*
 
 %gopkgfiles
 
 %changelog
+* Sat Sep 19 16:42:23 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 1.0.0-1
+- Bumped to version 1.0.0
+
 * Fri Aug 28 16:50:12 CEST 2020 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20200828gitdf91dc4
 - Initial package
 
