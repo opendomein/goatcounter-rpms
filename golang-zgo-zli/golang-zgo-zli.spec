@@ -4,7 +4,7 @@
 # https://github.com/zgoat/zli
 %global goipath         zgo.at/zli
 %global forgeurl        https://github.com/zgoat/zli
-%global commit          33768b083e81082ab73961cc6399bb355e7a02fb
+%global commit          d03e49b7c9eaee2c71ac1f9d53abb71588b0dabc
 
 %gometa
 
@@ -20,12 +20,11 @@ Version:        0
 Release:        0.1%{?dist}
 Summary:        A Go library for writing CLI programs. It includes flag parsing, colour escape codes, and various helpful utility functions, and makes testing fairly easy
 
-License:        # FIXME
-
+License:        MIT
 URL:            %{gourl}
 Source0:        %{gosource}
 
-BuildRequires:  golang(golang.org/x/sys/unix)
+BuildRequires:  golang(golang.org/x/term)
 
 %description
 %{common_description}
@@ -58,6 +57,6 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %gopkgfiles
 
 %changelog
-* Thu Jan 07 20:03:56 CET 2021 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20210107git33768b0
+* Fri Jun 25 08:58:24 CEST 2021 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20210625gitd03e49b
 - Initial package
 
