@@ -4,12 +4,12 @@
 # https://github.com/zgoat/zstd
 %global goipath         zgo.at/zstd
 %global forgeurl        https://github.com/zgoat/zstd
-%global commit          6219affd69ddf08f45c578a1f18d9c491c841789
+%global commit          a4927f23388f32342e53b0ac0cedf7ef4b452047
 
 %gometa
 
 %global common_description %{expand:
-A collection of extensions to Go's standard library.}
+Extensions to Go's stdlib.}
 
 %global golicenses      LICENSE
 %global godocs          README.md
@@ -17,7 +17,7 @@ A collection of extensions to Go's standard library.}
 Name:           %{goname}
 Version:        0
 Release:        0.1%{?dist}
-Summary:        A collection of extensions to Go's standard library
+Summary:        Extensions to Go's stdlib
 
 License:        MIT
 URL:            %{gourl}
@@ -42,6 +42,6 @@ Source0:        %{gosource}
 %gopkgfiles
 
 %changelog
-* Thu Jan 07 20:02:51 CET 2021 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20210107git6219aff
+* Fri Jun 25 09:01:27 CEST 2021 Johan Kok <johankok@users.noreply.github.com> - 0-0.1.20210625gita4927f2
 - Initial package
 
